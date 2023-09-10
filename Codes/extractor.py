@@ -2,7 +2,7 @@
 import fitz  # PyMuPDF
 
 # Open the PDF
-doc = fitz.open('C:/Users/Dell/flop/LabQuestion2021.pdf')
+doc = fitz.open('FilePath/File.pdf')
 
 # Define the RGB values for your colors
 PINK = (0.9686269760131836, 0.6000000238418579, 0.8196079730987549)
@@ -40,7 +40,7 @@ for i in range(len(doc)):
                 for color_name, color_rgb in color_definitions.items():
                     if color == color_rgb:
                         # Save the content to a .txt file
-                        txt_filename = f'LabQuestion2021_{color_name.lower()}.txt'
+                        txt_filename = f'File_Name_{color_name.lower()}.txt'
                         with open(txt_filename, 'a', encoding='utf-8') as txt_file:
                             txt_file.write(content + '\n')
 
