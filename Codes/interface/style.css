@@ -1,0 +1,52 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    background-color: #161513;
+    color: #fff;
+}
+
+/* Style your main content */
+.w3-container {
+    padding: 64px 16px;
+    background-color: #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Add a subtle gray background to sections */
+.section-bg {
+    background-color: #161513;
+}
+
+/* Style your buttons */
+.w3-button {
+    background-color: #000;
+    color: #fff;
+    padding: 44px 16px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+   
+}
+
+.w3-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style your footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Adjust the width of the input fields */
+.w3-input[type="text"],
+.w3-input[type="password"] {
+    width: 100%;
+    margin-right: 10%;
+}
