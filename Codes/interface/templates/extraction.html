@@ -1,0 +1,75 @@
+<!-- templates/extraction.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Extraction</title>
+    <style>
+        body {
+            background-image: url('static/old.jpg');  /* Replace 'your_background_image.jpg' with the actual image file path or URL */
+            background-size: cover;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-color: #fff;  /* Set text color to contrast with the background */
+            text-shadow: 0 0 3px #000, 0 0 5px #000;
+        }
+
+        h1, label, p {
+            color: #fff;  /* Set text color to contrast with the background */
+        }
+
+        /* Add more styling as needed */
+    </style>
+</head>
+<body>
+
+<h1>Text Extraction</h1>
+
+<!-- PDF Text Extraction Form -->
+<form id="extractForm" enctype="multipart/form-data">
+    <label for="pdfFileInput">Select a .pdf file for extraction:</label>
+    <input type="file" id="pdfFileInput" accept=".pdf">
+    <button type="button" onclick="extractText()">Extract Text</button>
+</form>
+
+<p id="downloadLink" style="display: none;">
+    <a id="downloadAnchor" href="#" download>Download Extracted Text</a>
+</p>
+
+<script>
+    function extractText() {
+        const input = document.getElementById('pdfFileInput');
+        const file = input.files[0];
+
+        if (file) {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            fetch('/extract_highlighted_text_from_pdf', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Highlighted text extracted and saved to "extracted_text.txt"');
+                    document.getElementById('downloadLink').style.display = 'block';
+                    document.getElementById('downloadAnchor').href = '/download_extracted_text';
+                } else {
+                    alert(`Error: ${data.error || 'Unknown error'}`);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred during text extraction.');
+            });
+        } else {
+            alert('Please select a .pdf file.');
+        }
+    }
+</script>
+
+</body>
+</html>
