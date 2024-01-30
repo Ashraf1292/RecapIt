@@ -1,0 +1,164 @@
+/* Style your main content */
+.w3-container {
+    padding: 64px 16px;
+    background-color: #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Add a subtle gray background to sections */
+.section-bg {
+    background-color: #161513;
+}
+
+/* Style your buttons */
+.w3-button {
+    background-color: #000;
+    color: #fff;
+    padding: 44px 16px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.w3-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style your footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Adjust the width of the input fields */
+.w3-input[type="text"],
+.w3-input[type="password"] {
+    width: 100%;
+    margin-right: 10%;
+}
+
+/* Style for the navbar */
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.navbar-inner {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar-inverse-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-inverse-collapse .nav {
+    margin-top: 15px;
+}
+
+.navbar-inverse-collapse .nav-user {
+    margin-right: 20px;
+}
+
+.navbar-inverse-collapse .nav-user a {
+    color: #fff;
+}
+
+.navbar-inverse-collapse .nav-user .nav-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* Style for the sidebar */
+.sidebar {
+    background-color: #161513;
+    padding: 20px;
+}
+
+.widget-menu {
+    list-style: none;
+}
+
+.widget-menu li {
+    margin-bottom: 10px;
+}
+
+.widget-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.widget-menu .active a {
+    font-weight: bold;
+}
+
+/* Style for the form */
+.form-horizontal {
+    margin-bottom: 20px;
+}
+
+.form-horizontal .control-label {
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-horizontal .controls {
+    margin-left: 20px;
+}
+
+.form-horizontal .btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.form-horizontal .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Style for the table */
+.table {
+    background-color: #000;
+    color: #fff;
+}
+
+.table th, .table td {
+    border: 1px solid #fff;
+}
+
+.table th {
+    background-color: #161513;
+    color: #fff;
+}
+
+.table a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
