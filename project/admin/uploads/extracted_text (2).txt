@@ -1,0 +1,1 @@
+A private cloud refers to cloud computing resources used exclusively by a single business or organization. A private cloud can be physically located on the company’s onsite datacenter. Some companies also pay third-party service providers to host their private cloud. A private cloud is one in which the services and infrastructure are maintained on a private network.

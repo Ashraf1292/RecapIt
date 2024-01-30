@@ -1,0 +1,1 @@
+A private cloud is one in which the services and infrastructure are maintained on a private network.
